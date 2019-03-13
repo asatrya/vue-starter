@@ -1,0 +1,12 @@
+version: "3.3"
+
+services: 
+  frontend:
+    image: asatrya/vuejs-starter:latest
+    container_name: vuejs_starter
+    ports:
+      - "8080:8080"
+    stdin_open: true
+    tty: true
+    env_file:
+      - .env
