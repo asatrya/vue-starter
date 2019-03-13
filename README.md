@@ -8,6 +8,9 @@ VueJS Boilerplate/Starter based on tutorial https://coursetro.com/courses/23/Vue
 # build image
 docker build --no-cache -t asatrya/vuejs-starter:latest .
 
+# create environment file
+cp .env-dist .env
+
 # run container
 docker-compose -f docker-compose.dev.yaml up -d
 ```
