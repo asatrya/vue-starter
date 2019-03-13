@@ -5,17 +5,24 @@ VueJS Boilerplate/Starter based on tutorial https://coursetro.com/courses/23/Vue
 ## How to Start
 
 ``` bash
+# clone repo & get into the project directory
+git clone https://github.com/asatrya/vue-starter
+cd vue-starter
+
 # build image
 docker build --no-cache -t asatrya/vuejs-starter:latest .
 
 # create environment file
 cp .env-dist .env
 
-# run container
+# run container (for development)
 docker-compose -f docker-compose.dev.yaml up -d
+
+# run container (for production)
+docker-compose -f docker-compose.yaml up -d
 ```
 
-Access http://localhost:8080 from your browser.
+Now, you can access to http://localhost:8080 from your browser.
 
 ## Get into the container's bash
 
