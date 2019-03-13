@@ -32,7 +32,7 @@ docker exec -it vuejs_starter sh
 
 ## Build Setup
 
-These scripts already run in Dockerfile.
+These scripts already run in Dockerfile. So that you don't have to run again. This is just for explanation for what's going on while building image and running container.
 
 ``` bash
 # install vue-cli globally
